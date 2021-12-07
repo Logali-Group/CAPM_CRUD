@@ -1,0 +1,37 @@
+### Get Students
+GET http://localhost:4004/mysrvdemo/GetStudent
+
+
+### Get Students
+#GET http://localhost:4004/mysrvdemo/GetStudent('demo@demo.com')
+
+
+### Update Student
+POST http://localhost:4004/mysrvdemo/UpdateStudent HTTP/1.1
+Content-type: application/json
+
+{
+    "email":"demo@demo.com",
+    "first_name":"demoUpdate",
+    "last_name":"demo",
+    "date_sign_up":"2021-10-10"
+}
+
+### Add Student
+POST http://localhost:4004/mysrvdemo/InsertStudent HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"demoINS@demo.com",
+    "first_name":"demoINS",
+    "last_name":"demoINS",
+    "date_sign_up":"2021-10-10"
+}
+
+### Delete Student
+POST http://localhost:4004/mysrvdemo/DeleteStudent HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"demoINS@demo.com"
+}
